@@ -1,0 +1,9 @@
+@media(max-width: 1920px) {
+    .header-center {
+        width: 96%;
+    }
+    
+    .content {
+        width: 96%;
+    }
+}

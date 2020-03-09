@@ -1,0 +1,121 @@
+.register-place {
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 40px;
+  padding: 20px 60px 40px 60px;
+  background-color: var(--header-footer-bg-color);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.register-left-place {
+  width: 500px;
+  height: 100%;
+  float: left;
+}
+
+.register-img-place {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 40px;
+}
+
+.register-doctor-info-place {
+  position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 184px;
+	padding: 10px;
+	background-color: var(--background-color-doctors-hover-decor);
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+.register-left-text {
+  max-width: 100%;
+  padding: 0px 50px;
+  font-size: 30px;
+  text-align: center;
+  color: var(--just-black);
+  word-wrap: break-word;
+}
+
+.register-form-place {
+  width: calc(100% - 600px);
+  height: 100%;
+  float: right;
+  padding: 0px 50px;
+  background-color: var(--just-white);
+  box-shadow: 10px 10px 30px #A3D3E7;
+  box-sizing: border-box;
+}
+
+.register-form-center {
+  width: 100%;
+  height: 100%;
+  padding: 0px 50px 10px 50px;
+  background-color: var(--header-footer-bg-color);
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
+  box-sizing: border-box;
+}
+
+.register-title {
+  margin-bottom: 40px;
+  font-size: 30px;
+  text-align: center;
+  color: var(--just-black);
+}
+
+.form-input-place {
+  width: 100%;
+  height: 100px;
+  margin: 0px auto 10px;
+}
+
+.short-input {
+  width: calc(100% - 70px);
+  float: left;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+.input-btn {
+  display: flex;
+  width: 70px;
+  height: 100%;
+  align-items: center;
+  float: left;
+  background-color: var(--just-white);
+  border: 2px solid var(--green-block-border-decor);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  outline: none;
+  border-left: none;
+  cursor: pointer;
+}
+
+.form-button-place {
+  width: 200px;
+  height: 80px;
+  margin: 0px auto 70px;
+}
+
+.form-btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: var(--just-black);
+  background-image: var(--background-color-link-btn);
+  cursor: pointer;
+  box-shadow: 5px 5px 30px var(--just-shadow);
+  border: none;
+  outline: none;
+}

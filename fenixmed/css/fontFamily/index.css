@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'ArialMT';
+    src: url('./../../fonts/ArialMT.eot?#iefix') format('embedded-opentype'),  url('./../../fonts/ArialMT.woff') format('woff'), url('./../../fonts/ArialMT.ttf')  format('truetype'), url('./../../fonts/ArialMT.svg#ArialMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --site-font: 'ArialMT';
+}

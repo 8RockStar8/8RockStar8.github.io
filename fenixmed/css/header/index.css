@@ -1,0 +1,77 @@
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: var(--header-footer-bg-color);
+    box-shadow: 0px 5px 10px var(--just-shadow);
+    z-index: 990;
+}
+
+.header-center {
+    display: flex;
+    width: 1920px;
+    height: 100%;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-place {
+    width: 150px;
+    height: 90px;
+}
+
+.header-menu {
+    height: 50px;
+    list-style: none;
+}
+
+.header-menu-item {
+    display: inline-block;
+    height: 50px;
+    border-left: 1px solid var(--green-block-border-decor);
+}
+
+.header-menu-item:last-child {
+    border-right: 1px solid var(--green-block-border-decor);
+}
+
+.header-menu-link {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+    font-size: 16px;
+    color: var(--just-black);
+    box-sizing: border-box;
+}
+
+.header-menu-link:hover {
+    color: var(--menu-item-active-color);
+}
+
+.header-menu-link-active {
+    color: var(--menu-item-active-color);
+}
+
+.header-phone-number {
+    font-size: 16px;
+}
+
+.flags-place {
+    width: 104px;
+    height: 30px;
+}
+
+.flag-link {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 7px;
+}
+
+.flag-link:last-child {
+    margin-right: 0px;
+}

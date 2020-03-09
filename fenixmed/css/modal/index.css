@@ -1,0 +1,203 @@
+.modal-place-fix {
+  position: fixed;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color-doctors-hover-decor);
+  z-index: 999;
+}
+
+.modal-place-center {
+  position: relative;
+  padding: 0px 60px 60px 60px;
+  background-color: var(--header-footer-bg-color);
+  box-shadow: 10px 10px 10px var(--just-shadow);
+  box-sizing: border-box;
+  border-radius: 76px;
+  -webkit-border-radius: 76px;
+  -moz-border-radius: 76px;
+  -ms-border-radius: 76px;
+  -o-border-radius: 76px;
+  overflow: hidden;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 40px 0px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--just-black);
+  text-align: center;
+}
+
+.modal-text {
+  margin-bottom: 40px;
+  font-size: 25px;
+  color: var(--just-black);
+}
+
+.modal-form-place {
+  width: 100%;
+}
+
+.modal-input-place {
+  width: 100%;
+  float: left;
+}
+
+.modal-input-place-child {
+  width: 400px;
+  height: 90px;
+  float: left;
+  margin: 0px 40px 40px 0px;
+}
+
+.modal-input-place-child:nth-child(3n) {
+  margin: 0px 0px 40px 0px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 100%;
+  padding: 0px 5px 0px 20px;
+  font-family: var(--site-font);
+  font-size: 25px;
+  color: var(--just-black);
+  background-color: var(--just-white);
+  box-shadow: 0px 4px 10px var(--just-shadow);
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.modal-input::placeholder {
+  font-family: var(--site-font);
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-question-text {
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: var(--just-black);
+}
+
+.modal-radio-place {
+  margin-bottom: 40px;
+}
+
+.label {
+  display: block;
+  position: relative;
+  padding-top: 4px;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-family: var(--site-font);
+  font-size: 20px;
+  color: var(--green-block-border-decor);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 2px solid rgba(155, 201, 255, 0.65);
+  border-radius: 50%;
+}
+
+.label:hover input ~ .checkmark {
+  background-color: rgba(155, 201, 255, 0.65);
+}
+
+.label input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.label .checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: var(--green-block-border-decor);
+}
+
+.modal-get-result-place {
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.modal-get-result-btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: var(--just-black);
+  background-image: var(--background-color-link-btn);
+  cursor: pointer;
+  box-shadow: 5px 5px 30px var(--just-shadow);
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.error-text {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: var(--error-red);
+}
+
+.success-text {
+  font-size: 20px;
+  color: var(--success-green);
+}

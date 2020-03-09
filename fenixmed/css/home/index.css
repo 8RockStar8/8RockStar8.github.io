@@ -1,0 +1,236 @@
+/* start top services place */
+/* start top services place */
+.top-services-place {
+	position: relative;
+	width: 1660px;
+	min-height: 370px;
+	margin: 0px auto;
+}
+
+.top-services-place-abs {
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	width: 100%;
+	height: 300px;
+	z-index: 1;
+}
+
+.top-services-place-abs-child {
+	width: 100%;
+	height: 100%;
+}
+
+.top-services-block {
+	perspective: 500px;
+	width: 25%;
+	height: 300px;
+	float: left;
+}
+
+.top-services-block-child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.top-services-block .top-services-block-child {
+	width: 102%;
+	height: 100%;
+	margin: 0px 0px 0px 15px;
+	background-color: var(--header-footer-bg-color);
+	box-shadow: 10px 10px 30px var(--just-shadow);
+	transform: rotateY(9deg);
+	-webkit-transform: rotateY(9deg);
+	-moz-transform: rotateY(9deg);
+	-ms-transform: rotateY(9deg);
+	-o-transform: rotateY(9deg);
+}
+
+.top-services-block:nth-child(2n) .top-services-block-child {
+	width: 102%;
+	height: 100%;
+	margin: 0px 0px 0px -15px;
+	background-color: var(--green-block-border-decor);
+	box-shadow: 0px 15px 30px var(--just-shadow);
+	transform: rotateY(-9deg);
+	-webkit-transform: rotateY(-9deg);
+	-moz-transform: rotateY(-9deg);
+	-ms-transform: rotateY(-9deg);
+	-o-transform: rotateY(-9deg);
+}
+
+.top-services-block-img-place {
+	width: 150px;
+	height: 150px;
+}
+
+.top-services-name {
+	max-width: 300px;
+	margin-top: 5px;
+	text-align: center;
+	font-size: 18px;
+	color: var(--just-black);
+	word-wrap: break-word;
+}
+
+.see-all-services-btn-place {
+	width: 80px;
+	height: 50px;
+	float: right;
+	margin-top: 40px;
+}
+/* end top services place */
+/* end top services place */
+
+
+
+/* start about place */
+/* start about place */
+.about-place {
+	width: 100%;
+	height: 340px;
+	margin-top: 40px;
+}
+
+.about-place-child {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.about-place-child:last-child {
+	padding: 0px 40px;
+	background-color: var(--header-footer-bg-color);
+	box-sizing: border-box;
+}
+
+.about-title {
+	margin-top: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: var(--just-black);
+}
+
+.about-text {
+	margin-top: 30px;
+	font-size: 25px;
+	color: var(--just-black);
+}
+
+.about-soc-place {
+	display: flex;
+	width: 180px;
+	margin: 30px auto 0px;
+	align-items: center;
+	justify-content: space-between;
+}
+/* end about place */
+/* end about place */
+
+
+
+/* start doctors place */
+/* start doctors place */
+.doctors-place {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 40px;
+}
+
+.doctors-place-center {
+	width: 1280px;
+	height: auto;
+	margin: 40px auto 0px;
+}
+
+.doctors-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: var(--just-black);
+}
+
+.doctors-center {
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+}
+
+.doctors-block {
+	position: relative;
+	width: 400px;
+	height: 500px;
+	float: left;
+	margin: 0px 40px 40px 0px;
+	overflow: hidden;
+}
+
+.doctors-block:nth-child(3n) {
+	margin: 0px 0px 40px 0px;
+}
+
+.doctors-block:hover .doctors-open-info-place{
+	bottom: 0px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.doctors-block-img-place {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.doctors-open-info-place {
+	position: absolute;
+	left: 0px;
+	bottom: -184px;
+	width: 100%;
+	height: 184px;
+	padding: 10px;
+	background-color: var(--background-color-doctors-hover-decor);
+	box-sizing: border-box;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	z-index: 1;
+}
+
+.doctor-info-text {
+	font-size: 30px;
+	color: var(--just-white);
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.doctor-soc-place {
+	display: flex;
+	width: 230px;
+	margin: 20px auto 0px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.doctor-soc-icon-place {
+	width: 50px;
+	height: 50px;
+}
+
+.see-all-doctors-btn-place {
+	width: 80px;
+	height: 50px;
+	float: right;	
+}
+/* end doctors place */
+/* end doctors place */
