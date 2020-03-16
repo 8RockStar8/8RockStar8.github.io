@@ -69,13 +69,61 @@ textarea {
   height: 100%;
 }
 
+.register-center-btn-place {
+  width: 220px;
+  height: 90px;
+  margin: 0px auto;
+  padding-top: 5px;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.register-center-btn-place:hover {
+  padding-top: 0px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.register-center-btn-place:hover .register-link {
+  width: 100%;
+  height: 100%;
+  line-height: 90px;
+  font-size: 22px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
 .register-link {
+  display: block;
+  width: 200px;
+  height: 80px;
+  margin: 0px auto;
   line-height: 80px;
   text-align: center;
   font-size: 18px;
   color: var(--just-black);
   background-image: var(--background-color-link-btn);
   box-shadow: 5px 5px 30px var(--just-shadow);
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
 }
 
 .see-all-link {

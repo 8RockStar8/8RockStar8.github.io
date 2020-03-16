@@ -109,7 +109,7 @@
 }
 
 .register-now-text {
-  margin-top: 70px;
+  margin: 70px 0px 40px 0px;
   font-size: 30px;
   color: var(--just-black);
   text-align: center;

@@ -1,6 +1,8 @@
 .actions-place {
   width: 1660px;
-  margin: 40px auto;
+  margin: 40px auto 0px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -13,6 +15,7 @@
 
 .actions-block-place {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .actions-block-child {

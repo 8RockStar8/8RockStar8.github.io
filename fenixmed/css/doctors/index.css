@@ -33,8 +33,7 @@
   width: 100%;
   height: auto;
   float: left;
-  margin-top: 40px;
-  overflow: hidden;
+  margin: 40px 0px;
 }
 
 .all-doctors-title {
@@ -47,6 +46,7 @@
   width: 1720px;
   height: auto;
   margin: 0px auto;
+  overflow: hidden;
 }
 
 .all-doctors-block {

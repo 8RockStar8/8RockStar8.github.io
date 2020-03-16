@@ -102,15 +102,32 @@
 }
 
 .form-button-place {
-  width: 200px;
-  height: 80px;
+  width: 220px;
+  height: 90px;
   margin: 0px auto 70px;
+}
+
+.form-button-place:hover .form-btn {
+  width: 220px;
+  height: 90px;
+  font-size: 22px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 
 .form-btn {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 80px;
+  margin: 0px auto;
   font-size: 18px;
   color: var(--just-black);
   background-image: var(--background-color-link-btn);
@@ -118,4 +135,9 @@
   box-shadow: 5px 5px 30px var(--just-shadow);
   border: none;
   outline: none;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
