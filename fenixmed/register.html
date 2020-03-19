@@ -6,9 +6,6 @@
 
     <link rel="stylesheet" href="./css/index.css" />
 
-		<script src="./js/jQuery.js"></script>
-		<script src="./js/main.js"></script>
-
     <title>Register</title>
   </head>
   <body>
@@ -148,7 +145,7 @@
 				<!-- register form place -->
 				<div class="register-form-place">
 					<div class="register-form-center">
-						<h1 class="register-title">Գրանցվել Խորհրդատվության</h1>
+						<h1 class="register-title">Գրանցվել</h1>
 						<div class="form-input-place">
 							<input type="text" name="name" id="name" class="register-input" placeholder="Անուն *" />
 						</div>
@@ -161,14 +158,31 @@
 						<div class="form-input-place">
 							<input type="text" name="email" id="email" class="register-input" placeholder="Էլ.հասցե *" />
 						</div>
+						<div class="form-select-place custom-select" id="branch-place">
+							<select id="branch">
+								<option value="0">Մասնաճյուղեր *</option>
+								<option value="1">Մասնաճյուղ համար մեկ</option>
+								<option value="2">Մասնաճյուղ համար երկու</option>
+								<option value="3">Մասնաճյուղ համար երեք</option>
+								<option value="4">Մասնաճյուղ համար չորս</option>
+								<option value="5">Մասնաճյուղ համար հինգ</option>
+								<option value="6">Մասնաճյուղ համար վեց</option>
+								<option value="7">Մասնաճյուղ համար յոթ</option>
+								<option value="8">Մասնաճյուղ համար ութ</option>
+								<option value="9">Մասնաճյուղ համար ինը</option>
+								<option value="10">Մասնաճյուղ համար տաս</option>
+								<option value="11">Մասնաճյուղ համար տասնմեկ</option>
+								<option value="12">Մասնաճյուղ համար տասներկու</option>
+							</select>
+						</div>
 						<div class="form-input-place">
-							<input type="text" name="month" id="month" class="register-input short-input" placeholder="Ամիս ամսաթիվ *" />
+							<input type="text" name="month" id="month" class="register-input short-input" disabled="disabled" placeholder="Ամիս ամսաթիվ *" />
 							<button type="button" class="input-btn" id="calendar">
 								<img src="./images/calendar.svg" alt="calendar" />
 							</button>
 						</div>
 						<div class="form-input-place">
-							<input type="text" name="hour" id="hour" class="register-input short-input" placeholder="Ժամ *" />
+							<input type="text" name="hour" id="hour" class="register-input short-input" disabled="disabled" placeholder="Ժամ *" />
 							<button type="button" class="input-btn" id="clock">
 								<img src="./images/clock.svg" alt="clock" />
 							</button>
@@ -286,5 +300,15 @@
 		</footer>
 		<!-- end footer -->
 		<!-- end footer -->
+
+
+
+		<!-- start scripts -->
+    <!-- start scripts -->
+		<script src="./js/jQuery.js"></script>
+		<script src="./js/select.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- end scripts -->
+    <!-- end scripts -->
   </body>
 </html>

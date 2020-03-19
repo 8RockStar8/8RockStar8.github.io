@@ -12,27 +12,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, p, span, a, button {
+h1, h2, h3, p, span, a, button, option {
   font-family: var(--site-font);
   font-weight: normal;
-}
-
-.register-input {
-  width: 100%;
-  height: 100%;
-  padding: 0px 5px 0px 40px;
-  font-family: var(--site-font);
-  font-size: 30px;
-  color: var(--just-black);
-  background-color: var(--just-white);
-  border: 2px solid var(--green-block-border-decor);
-  outline: none;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
-  box-sizing: border-box;
 }
 
 textarea {
@@ -57,10 +39,22 @@ textarea {
   -o-border-radius: 50px;
 }
 
-::placeholder {
+.register-input {
+  width: 100%;
+  height: 100%;
+  padding: 0px 5px 0px 40px;
   font-family: var(--site-font);
   font-size: 30px;
-  color: rgba(0, 0, 0, 0.33);
+  color: var(--just-black);
+  background-color: var(--just-white);
+  border: 2px solid var(--green-block-border-decor);
+  outline: none;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  box-sizing: border-box;
 }
 
 .link-block {
@@ -74,6 +68,7 @@ textarea {
   height: 90px;
   margin: 0px auto;
   padding-top: 5px;
+  clear: both;
   box-sizing: border-box;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -152,4 +147,43 @@ textarea {
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+::placeholder {
+  font-family: var(--site-font);
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.33);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--header-footer-bg-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  -ms-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--header-footer-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--green-block-border-decor);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  -ms-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
 }

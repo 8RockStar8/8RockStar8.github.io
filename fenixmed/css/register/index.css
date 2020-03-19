@@ -1,143 +1,107 @@
-.register-place {
-  width: 100%;
-  min-height: 100%;
-  margin-bottom: 40px;
-  padding: 20px 60px 40px 60px;
-  background-color: var(--header-footer-bg-color);
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.register-left-place {
-  width: 500px;
-  height: 100%;
-  float: left;
-}
-
-.register-img-place {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  margin-bottom: 40px;
-}
-
-.register-doctor-info-place {
-  position: absolute;
-	left: 0px;
-	bottom: 0px;
-	width: 100%;
-	height: 184px;
-	padding: 10px;
-	background-color: var(--background-color-doctors-hover-decor);
-	box-sizing: border-box;
-	z-index: 1;
-}
-
-.register-left-text {
-  max-width: 100%;
-  padding: 0px 50px;
-  font-size: 30px;
-  text-align: center;
-  color: var(--just-black);
-  word-wrap: break-word;
-}
-
 .register-form-place {
-  width: calc(100% - 600px);
+  width: 1200px;
   height: 100%;
-  float: right;
+  margin: 0px auto;
   padding: 0px 50px;
   background-color: var(--just-white);
   box-shadow: 10px 10px 30px #A3D3E7;
   box-sizing: border-box;
 }
 
-.register-form-center {
-  width: 100%;
-  height: 100%;
-  padding: 0px 50px 10px 50px;
-  background-color: var(--header-footer-bg-color);
-  border-radius: 90px;
-  -webkit-border-radius: 90px;
-  -moz-border-radius: 90px;
-  -ms-border-radius: 90px;
-  -o-border-radius: 90px;
-  box-sizing: border-box;
+.form-select-place {
+  position: relative;
 }
 
-.register-title {
-  margin-bottom: 40px;
-  font-size: 30px;
-  text-align: center;
-  color: var(--just-black);
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
 }
 
-.form-input-place {
-  width: 100%;
+.select-selected {
+  width: calc(100% - 4px);
   height: 100px;
   margin: 0px auto 10px;
 }
 
-.short-input {
-  width: calc(100% - 70px);
-  float: left;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-right: none;
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 46px;
+  right: 36px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-color: var(--green-block-border-decor) transparent transparent transparent;
 }
 
-.input-btn {
-  display: flex;
-  width: 70px;
-  height: 100%;
-  align-items: center;
-  float: left;
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent var(--green-block-border-decor) transparent;
+  top: 25px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-selected {
+  padding: 28px 5px 0px 40px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.33);
+  cursor: pointer;
+  user-select: none;
   background-color: var(--just-white);
   border: 2px solid var(--green-block-border-decor);
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  outline: none;
-  border-left: none;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.select-items div {
+  margin-bottom: 10px;
+  padding: 10px 5px 10px 20px;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.33);
   cursor: pointer;
+  user-select: none;
+  background-color: var(--just-white);
+  border: 2px solid var(--green-block-border-decor);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  box-sizing: border-box;
 }
 
-.form-button-place {
-  width: 220px;
-  height: 90px;
-  margin: 0px auto 70px;
+.select-items div:last-child {
+  margin-bottom: 0px;
 }
 
-.form-button-place:hover .form-btn {
-  width: 220px;
-  height: 90px;
-  font-size: 22px;
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: var(--just-white);
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  max-height: 400px;
+  padding: 15px;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  z-index: 99;
 }
 
-.form-btn {
-  display: block;
-  width: 200px;
-  height: 80px;
-  margin: 0px auto;
-  font-size: 18px;
-  color: var(--just-black);
-  background-image: var(--background-color-link-btn);
-  cursor: pointer;
-  box-shadow: 5px 5px 30px var(--just-shadow);
-  border: none;
-  outline: none;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
