@@ -143,4 +143,64 @@ $(document).ready(function() {
     // TODO: AJAX request
   });
   // remove exist analize
+
+
+
+  // open / close form analize list
+  $('.form-analize-place').on('click', function() {
+    if ($(this).data('isopen') === false) {
+      $(this).addClass('form-analize-place-arrow-active');
+      $('.form-analize-list-abs-place').css({
+        'display': 'block'
+      });
+      $(this).data('isopen', true);
+    } else {
+      $(this).removeClass('form-analize-place-arrow-active');
+      $('.form-analize-list-abs-place').css({
+        'display': 'none'
+      });
+      $(this).data('isopen', false);
+    }
+  });
+  // open / close form analize list
+
+
+
+  // stop close form analize list
+  $('.form-analize-list-abs-place').on('click', function(e) {
+    e.stopPropagation();
+  });
+  // stop close form analize list
+
+
+
+  // select form analize
+  $('.form-analize-list-item').on('click', function() {
+    if ($(this).data('check') === false) {
+      $(this).css({
+        'background-color': 'rgba(0, 0, 0, 0.1)'
+      });
+      $(this).find('.analize-uncheked').css({
+        'display': 'none'
+      });
+      $(this).find('.analize-cheked').css({
+        'display': 'block'
+      });
+      $(this).data('check', true);
+      // TODO: Add in analize array for send
+    } else {
+      $(this).css({
+        'background-color': 'var(--header-footer-bg-color)'
+      });
+      $(this).find('.analize-uncheked').css({
+        'display': 'block'
+      });
+      $(this).find('.analize-cheked').css({
+        'display': 'none'
+      });
+      $(this).data('check', false);
+      /// TODO: Remove in analize array for send
+    }
+  });
+  // select form analize
 });

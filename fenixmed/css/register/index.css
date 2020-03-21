@@ -60,7 +60,7 @@
 .select-items div {
   margin-bottom: 10px;
   padding: 10px 5px 10px 20px;
-  font-size: 28px;
+  font-size: 26px;
   color: rgba(0, 0, 0, 0.33);
   cursor: pointer;
   user-select: none;
@@ -81,12 +81,12 @@
 /*style items (options):*/
 .select-items {
   position: absolute;
-  background-color: var(--just-white);
   top: calc(100% + 10px);
   left: 0;
   right: 0;
   max-height: 400px;
   padding: 15px;
+  background-color: var(--just-white);
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -104,4 +104,101 @@
 
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-analize-place {
+  position: relative;
+  width: calc(100% - 4px);
+  height: 100px;
+  margin: 0px auto 10px;
+  padding: 0px 5px 0px 40px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.33);
+  background-color: var(--just-white);
+  border: 2px solid var(--green-block-border-decor);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.form-analize-place:after {
+  position: absolute;
+  content: "";
+  top: 46px;
+  right: 32px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-color: var(--green-block-border-decor) transparent transparent transparent;
+}
+
+.form-analize-place-arrow-active:after {
+  border-color: transparent transparent var(--green-block-border-decor) transparent;
+  top: 25px;
+}
+
+.form-analize-text {
+  line-height: 100px;
+}
+
+.form-analize-list-abs-place {
+  position: absolute;
+  display: none;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  max-height: 400px;
+  padding: 15px;
+  background-color: var(--just-white);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  z-index: 99;
+}
+
+.form-analize-list-item {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin: 0px auto 10px;
+  padding: 10px 15px 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header-footer-bg-color);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.form-analize-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-analize-list-analize-name {
+  font-size: 26px;
+}
+
+.form-analize-list-analize-price {
+  line-height: 30px;
+  float: left;
+  margin-right: 30px;
+  font-size: 26px;
+}
+
+.form-analize-list-analize-check-place {
+  width: 30px;
+  height: 30px;
+  float: left;
 }
