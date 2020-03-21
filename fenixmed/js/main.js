@@ -33,7 +33,7 @@ $(document).ready(function() {
 
   
 
-  // check analize from price list
+  // check / uncheck analize from price list
   $('.all-price-item-center').on('click', function() {
     if ($(this).data('check') === false) {
       $(this).find('.analize-uncheked').css({
@@ -43,6 +43,7 @@ $(document).ready(function() {
         'display': 'block'
       });
       $(this).data('check', true);
+      // TODO: AJAX request
     } else {
       $(this).find('.analize-uncheked').css({
         'display': 'block'
@@ -51,7 +52,95 @@ $(document).ready(function() {
         'display': 'none'
       });
       $(this).data('check', false);
+      // TODO: AJAX request
     }
   });
-  // check analize from price list
+  // check / uncheck  analize from price list
+
+
+
+  // open / close selected analize place
+  $('.open-selected-analize-btn').on('click', function() {
+    if ($(this).data('open') === false) {
+      $('.selected-analize-place').css({
+        'right': '0px'
+      });
+      $('.open-analize-img').css({
+        'transform': 'rotate(0deg)'
+      });
+      $(this).data('open', true);
+    } else {
+      $('.selected-analize-place').css({
+        'right': '-500px'
+      });
+      $('.open-analize-img').css({
+        'transform': 'rotate(180deg)'
+      });
+      $(this).data('open', false);
+    }
+  });
+  // open / close selected analize place
+
+
+
+  // check if analize exist
+  let analize = $('.selected-analize-item');
+  let analizeExistPrice = 0;
+  let analizePriceText = 'Ընդհամենը՝ ';
+  let analizePriceCurency = 'դր.';
+  let mustCheckAnalize = 'Ընտրեք անալիզ';
+  if (analize && analize.length !== 0) {
+    analize.each(function(index, item) {
+      let singleAnalize = item;
+      analizeExistPrice += +$(singleAnalize)[0].dataset.price;
+    });
+    $('.selected-analize-info-place').css({
+      'margin-top': '40px'
+    });
+    $('.link-from-selected-analize-list').css({
+      'display': 'inline-block'
+    });
+    $('.selected-analize-all-price').text(analizePriceText + analizeExistPrice + analizePriceCurency);
+  } else {
+    $('.selected-analize-all-price').text(mustCheckAnalize);
+    $('.selected-analize-info-place').css({
+      'margin-top': '0px'
+    });
+    $('.link-from-selected-analize-list').css({
+      'display': 'none'
+    });
+  }
+  // check if analize exist
+
+
+
+  // remove exist analize
+  $('.remove-analize-btn').on('click', function() {
+    $(this).parent().parent().remove();
+    let analize = $('.selected-analize-item');
+    let analizeExistPrice = 0;
+    if (analize && analize.length !== 0) {
+      analize.each(function(index, item) {
+        let singleAnalize = item;
+        analizeExistPrice += +$(singleAnalize)[0].dataset.price;
+      });
+      $('.selected-analize-info-place').css({
+        'margin-top': '40px'
+      });
+      $('.link-from-selected-analize-list').css({
+        'display': 'inline-block'
+      });
+      $('.selected-analize-all-price').text(analizePriceText + analizeExistPrice + analizePriceCurency);
+    } else {
+      $('.selected-analize-all-price').text(mustCheckAnalize);
+      $('.selected-analize-info-place').css({
+        'margin-top': '0px'
+      });
+      $('.link-from-selected-analize-list').css({
+        'display': 'none'
+      });
+    }
+    // TODO: AJAX request
+  });
+  // remove exist analize
 });
