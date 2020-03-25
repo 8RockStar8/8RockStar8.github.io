@@ -18,6 +18,10 @@ $(document).ready(function() {
   let timeError = lang === 'ru' ? 'Выберите поле Время' : lang === 'en' ? 'Choose Time field' : 'Ընտրեք Ժամ դաշտեը';
 
   let successText = lang === 'ru' ? 'Регистрация выполнена' : lang === 'en' ? 'Registration completed' : 'Գրանցումն ավարտված է';
+
+  let analizeNumberError = lang === 'ru' ? 'Заполнить поле номер анализа' : lang === 'en' ? 'Fill Analysis number field' : 'Լրացրեք Անալիզի համար դաշտեը';
+  let userBirthdayError = lang === 'ru' ? 'Заполнить поле день рождения' : lang === 'en' ? 'Fill Birthday field' : 'Լրացրեք Ծննդյան ամիս ամսաթիվ դաշտեը';
+  let selectTypeError = lang === 'ru' ? 'Выберите версию получения Анализа' : lang === 'en' ? 'Choose version get Analysis' : 'Ընտրեք պատասխանը ստանալու տարբերակը';
   // check language
 
 
@@ -474,7 +478,7 @@ $(document).ready(function() {
     
     $.ajax({
       method: 'POST',
-      url: url,
+      url: 'api url',
       data: {
         name,
         fullName,
@@ -530,4 +534,87 @@ $(document).ready(function() {
     });
   });
   // send form data to backend
+
+
+
+  // get analize result
+  $('.modal-get-result-btn').on('click', function() {
+    let analizeNumber = $('#analiz-number').val();
+    let userBirthday = $('#birthday').val();
+    let userFullName = $('#analiz-fullname').val();
+
+    if (analizeNumber === '' && userBirthday === '' && userFullName === '') {
+      $('.modal-input').css({
+        'border': '1px solid var(--error-red)'
+      });
+      $('.error-text').text(allError);
+      return;
+    }
+
+    if (analizeNumber === '') {
+      $('#analiz-number').css({
+        'border': '1px solid var(--error-red)'
+      });
+      $('.error-text').text(analizeNumberError);
+      return;
+    }
+
+    if (userBirthday === '') {
+      $('#birthday').css({
+        'border': '1px solid var(--error-red)'
+      });
+      $('.error-text').text(userBirthdayError);
+      return;
+    }
+
+    if (userFullName === '') {
+      $('#analiz-fullname').css({
+        'border': '1px solid var(--error-red)'
+      });
+      $('.error-text').text(fullNameError);
+      return;
+    }
+
+    if (!$('input[name="getAnalize"]').is(':checked')) {
+      $('.error-text').text(selectTypeError);
+      return;
+    }
+
+    $.ajax({
+      method: 'POST',
+      url: 'api url',
+      data: {
+        analizeNumber,
+        userBirthday,
+        userFullName
+      },
+      success: function(res) {
+        $('.success-text').text(res.text);
+        setTimeout(function() {
+          $('.success-text').text('');
+        }, 3000);
+      },
+      error: function(res) {
+        $('.error-text').text(res.text);
+        setTimeout(function() {
+          $('.error-text').text('');
+        }, 3000);
+      }
+    });
+  });
+  // get analize result
+
+
+
+  // remove error border from modal inputs, radio check
+  $('.modal-input').on('keypress keydown keyup', function() {
+    $(this).css({
+      'border': 'none'
+    });
+    $('.error-text').text('');
+  });
+  $('input[name="getAnalize"]').on('click', function() {
+    $('.error-text').text('');
+  });
+  // remove error border from modal inputs, radio check
 });
