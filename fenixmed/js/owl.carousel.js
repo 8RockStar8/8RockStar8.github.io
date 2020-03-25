@@ -6,8 +6,8 @@ $(document).ready(function() {
 		margin: 10,
 		nav: true,
 		navText: [
-			"<img src='images/left-arrow.png' alt='left arrow' />",
-			"<img src='images/right-arrow.png' alt='right arrow' />"
+			"<img src='images/left-arrow.png' class='image-cover' alt='left arrow' />",
+			"<img src='images/right-arrow.png' class='image-cover' alt='right arrow' />"
 		],
 		autoplay: true,
 		autoplayHoverPause: true,

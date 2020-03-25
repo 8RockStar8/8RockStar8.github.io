@@ -4,6 +4,7 @@
 }
 
 .owl-carousel .owl-item img {
+  height: 445px !important;
   max-height: 445px !important;
 }
 
@@ -11,6 +12,8 @@
   position: absolute;
   top: calc(50% - 25px);
   left: 10px;
+  width: 50px;
+  height: 50px;
   outline: none;
 }
 
@@ -18,6 +21,8 @@
   position: absolute;
   top: calc(50% - 25px);
   right: 10px;
+  width: 50px;
+  height: 50px;
   outline: none;
 }
 
@@ -34,7 +39,7 @@
 
 .bottom-slider-place {
   width: 100%;
-  height: 546px;
+  height: auto;
   clear: both;
 }
 
@@ -43,5 +48,6 @@
 }
 
 .bottom-slider-place .owl-carousel .owl-item img {
+  height: 100% !important;
   max-height: 100% !important;
 }

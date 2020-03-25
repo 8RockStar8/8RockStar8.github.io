@@ -6,7 +6,7 @@ header {
   height: 100px;
   background-color: var(--header-footer-bg-color);
   box-shadow: 0px 5px 10px var(--just-shadow);
-  z-index: 990;
+  z-index: 993;
 }
 
 .header-center {
@@ -63,9 +63,9 @@ header {
 
 .burger-place {
   display: none;
-  width: 40px;
+  width: 30px;
   height: 20px;
-  transform: translate(-50%, -50%);
+  margin-right: 20px;
 }
 
 .burger { 
@@ -82,51 +82,57 @@ span {
   display: block;
   width: 100%;
   border-radius: 3px;
-  height: 4px;
+  height: 3px;
   background-color: var(--green-block-border-decor);
   transition: all .3s;
 }
 
 span + span {
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .active span:nth-child(1) {
-  margin-top: 4px;
-  animation: ease .7s top forwards;
+  margin-top: 3px;
+  animation: ease 0.5s top forwards;
+  -webkit-animation: ease 0.5s top forwards;
 }
 
 .not-active span:nth-child(1) {
-  margin-top: 4px;
-  animation: ease .7s top-2 forwards;
+  margin-top: 0px;
+  animation: ease 0.5s top-2 forwards;
+  -webkit-animation: ease 0.5s top-2 forwards;
 }
 
 .active span:nth-child(2) {
-  margin-top: 4px;
-  animation: ease .7s scaled forwards;
+  margin-top: 3px;
+  animation: ease 0.5s scaled forwards;
+  -webkit-animation: ease 0.5s scaled forwards;
 }
 
 .not-active span:nth-child(2) {
-  margin-top: 4px;
-  animation: ease .7s scaled-2 forwards;
+  margin-top: 3px;
+  animation: ease 0.5s scaled-2 forwards;
+  -webkit-animation: ease 0.5s scaled-2 forwards;
 }
 
 .active span:nth-child(3) {
-  margin-top: 4px;
-  animation: ease .7s bottom forwards;
+  margin-top: -3px;
+  animation: ease 0.5s bottom forwards;
+  -webkit-animation: ease 0.5s bottom forwards;
 }
 
 .not-active span:nth-child(3) {
-  margin-top: 4px;
+  margin-top: 3px;
   animation: ease .7s bottom-2 forwards;
+  -webkit-animation: ease .7s bottom-2 forwards;
 }
 
 .header-menu-mobile {
   display: none;
   position: absolute;
   top: 100%;
-  left: 173px;
-  width: calc(100% - 300px);
+  left: 0px;
+  width: 100%;
   height: 0px;
   list-style: none;
   background-color: var(--green-block-border-decor);
@@ -196,22 +202,22 @@ span + span {
     transform: rotate(0);
   }
   50% {
-    top: 8px;
+    top: 3px;
     transform: rotate(0);
   }
   100% {
-    top: 8px;
+    top: 3px;
     transform: rotate(45deg);
   }
 }
 
 @keyframes top-2 {
   0% {
-    top: 8px;
+    top: 3px;
     transform: rotate(45deg);
   }
   50% {
-    top: 8px;
+    top: 3px;
     transform: rotate(0deg);
   }
   100% {
@@ -226,22 +232,22 @@ span + span {
     transform: rotate(0);
   }
   50% {
-    bottom: 8px;
+    bottom: 3px;
     transform: rotate(0);
   }
   100% {
-    bottom: 8px;
+    bottom: 3px;
     transform: rotate(135deg);
   }
 }
 
 @keyframes bottom-2 {
   0% {
-    bottom: 8px;
+    bottom: 3px;
     transform: rotate(135deg);
   }
   50% {
-    bottom: 8px;
+    bottom: 3px;
     transform: rotate(0);
   }
   100% {

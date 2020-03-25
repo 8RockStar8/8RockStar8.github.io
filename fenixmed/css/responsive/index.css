@@ -1,9 +1,415 @@
 @media(max-width: 1920px) {
-    .header-center {
-        width: 96%;
-    }
-    
-    .content {
-        width: 96%;
-    }
+  .header-center {
+    width: 98%;
+  }
+  
+  .content {
+    width: 98%;
+  }
 }
+
+@media(max-width: 1730px) {
+  .top-services-place {
+    width: 1380px;
+  }
+
+  .top-services-block {
+    perspective: 350px;
+  }
+}
+
+@media(max-width: 1630px) {
+  .header-menu-link {
+    padding: 0px 5px;
+    font-size: 14px;
+  }
+
+  .header-phone-number {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 1440px) {
+  .slider-place {
+    height: 400px;
+  }
+
+  .owl-carousel .owl-item img {
+    height: 400px !important;
+    max-height: 400px !important;
+  }
+
+  .register-center-btn-place {
+    width: 140px;
+    height: 60px;
+  }
+
+  .register-link {
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+
+  .register-center-btn-place:hover .register-link {
+    line-height: 60px;
+    font-size: 18px;
+  }
+
+  .owl-prev {
+    width: 40px;
+    height: 40px;
+  }
+
+  .owl-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .selected-analize-abs-btn-place {
+    left: -40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .open-analize-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .selected-analize-name {
+    font-size: 14px;
+  }
+
+  .selected-analize-price {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .remove-analize-btn {
+    width: 10px;
+    height: 10px;
+  }
+
+  .selected-analize-info-place {
+    margin-top: 30px;
+  }
+
+  .selected-analize-all-price {
+    font-size: 18px;
+  }
+
+  .link-from-selected-analize-list {
+    font-size: 16px;
+  }
+
+  .link-from-selected-analize-list:hover {
+    font-size: 18px;
+  }
+
+  .top-services-place {
+    width: 1200px;
+    min-height: 310px;
+  }
+
+  .top-services-place-abs {
+    height: auto;
+  }
+
+  .top-services-block {
+    perspective: 250px;
+    height: 230px;
+  }
+
+  .top-services-block-img-place {
+    width: 80px;
+    height: 80px;
+  }
+
+  .top-services-name {
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 1420px) {
+  .logo-place {
+    width: 100px;
+  }
+
+  .header-menu {
+    height: 40px;
+  }
+
+  .header-menu-item {
+    height: 40px;
+  }
+
+  .header-menu-link {
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+  }
+
+  .header-phone-number {
+    font-size: 13px;
+  }
+
+  .flags-place {
+    width: 70px;
+    height: 20px;
+  }
+
+  .flag-link {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .flag-link:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media(max-width: 1300px) {
+  .doctors-place-center {
+    width: 840px;
+  }
+
+  .doctors-block:nth-child(2n) {
+    margin-right: 0px;
+  }
+
+  .doctors-block:nth-child(3n) {
+    float: none;
+    margin: 0px auto;
+  }
+}
+
+@media(max-width: 1240px) {
+  .slider-place {
+    height: 360px;
+  }
+
+  .owl-carousel .owl-item img {
+    height: 360px !important;
+    max-height: 360px !important;
+  }
+
+  .top-services-place {
+    width: 1080px;
+  }
+
+  .top-services-block {
+    perspective: 200px;
+  }
+}
+
+@media(max-width: 1230px) {
+  .header-menu {
+    display: flex;
+  }
+
+  .header-menu-item {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .header-menu-link {
+    display: inline-block;
+    height: auto;
+    max-width: 120px;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
+@media(max-width: 1120px) {
+  body {
+    padding-top: 80px;
+  }
+
+  .selected-analize-place {
+    top: 90px;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .logo-place {
+    height: 100%;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-phone-number {
+    display: none;
+  }
+
+  .burger-place {
+    display: block;
+  }
+
+  .header-menu-mobile {
+    display: block;
+  }
+
+  .flex-for-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .top-services-place {
+    width: 540px;
+    min-height: 600px;
+  }
+
+  .top-services-block {
+    width: 50%;
+    margin-bottom: 28px;
+  }
+
+  .about-place {
+    width: 600px;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  .about-place-child {
+    width: 100%;
+  }
+
+  .about-place-child:last-child {
+    padding-bottom: 20px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .doctors-title {
+    font-size: 24px;
+  }
+}
+
+@media(max-width: 860px) {
+  .slider-place {
+    height: 320px;
+  }
+
+  .owl-carousel .owl-item img {
+    height: 320px !important;
+    max-height: 320px !important;
+  }
+
+  .doctors-place-center {
+    width: 400px;
+  }
+
+  .doctors-block {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .doctors-block:nth-child(3n) {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+@media(max-width: 620px) {
+  .about-place {
+    width: 98%;
+  }
+}
+
+@media(max-width: 560px) {
+  .selected-analize-place {
+    right: -360px;
+    width: 360px;
+  }
+
+  .selected-analize-name {
+    font-size: 12px;
+  }
+
+  .selected-analize-price {
+    margin-right: 7px;
+    font-size: 12px;
+  }
+
+  .slider-place {
+    height: 240px;
+  }
+
+  .owl-carousel .owl-item img {
+    height: 240px !important;
+    max-height: 240px !important;
+  }
+
+  .owl-prev {
+    width: 30px;
+    height: 30px;
+  }
+
+  .owl-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slider-btn-place-abs {
+    bottom: 20px;
+    height: 60px;
+  }
+
+  .register-center-btn-place {
+    width: 100px;
+    height: 40px;
+  }
+
+  .register-link {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .register-center-btn-place:hover .register-link {
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  .top-services-place {
+    width: 270px;
+    min-height: 1060px;
+  }
+
+  .top-services-block {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* @media(max-width: 520px) {
+  .header-menu-mobile-link {
+    font-size: 14px;
+  }
+
+  .header-mobile-phone-number {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 450px) {
+  .header-menu-mobile-link {
+    font-size: 12px;
+  }
+
+  .header-mobile-phone-number {
+    font-size: 12px;
+  }
+} */

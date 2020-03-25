@@ -62,7 +62,8 @@
 
 .top-services-block-img-place {
 	width: 150px;
-	height: 150px;
+    height: 150px;
+    margin: 0px auto;
 }
 
 .top-services-name {
@@ -115,14 +116,14 @@
 
 .about-text {
 	margin-top: 30px;
-	font-size: 25px;
+	font-size: 20px;
 	color: var(--just-black);
 }
 
 .about-soc-place {
 	display: flex;
 	width: 180px;
-	margin: 30px auto 0px;
+	margin: 20px auto 0px;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -149,7 +150,7 @@
 .doctors-title {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 30px;
 	color: var(--just-black);
 }
 
