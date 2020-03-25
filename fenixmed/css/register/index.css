@@ -27,7 +27,7 @@
   position: absolute;
   content: "";
   top: 46px;
-  right: 36px;
+  right: 24px;
   width: 0;
   height: 0;
   border: 15px solid transparent;
@@ -129,7 +129,7 @@
   position: absolute;
   content: "";
   top: 46px;
-  right: 32px;
+  right: 20px;
   width: 0;
   height: 0;
   border: 15px solid transparent;

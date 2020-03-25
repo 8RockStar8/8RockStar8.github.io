@@ -83,19 +83,65 @@
   float: left;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  border-right: none;
+  border-right: none !important;
 }
 
 .input-btn {
-  display: flex;
   width: 70px;
   height: 100%;
-  align-items: center;
   float: left;
   background-color: var(--just-white);
   border: 2px solid var(--green-block-border-decor);
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
+  border-left: none !important;
+  outline: none;
+  border-left: none;
+  cursor: pointer;
+}
+
+.ui-timepicker-wrapper {
+  width: 385px !important;
+}
+
+.ui-timepicker-list li {
+  font-size: 22px !important;
+}
+
+.ui-widget {
+  font-size: 22px !important;
+}
+
+.ui-datepicker-week-end {
+  display: none !important;
+}
+
+.ui-state-default {
+  text-align: center !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  background-color: var(--green-block-border-decor) !important;
+  border: 1px solid var(--green-block-border-decor) !important;
+}
+
+.ui-datepicker {
+  width: 100%;
+}
+
+.ui-datepicker-trigger {
+  display: flex;
+  width: 68px;
+  height: 96px;
+  align-items: center;
+  float: left;
+  object-fit: scale-down;
+  object-position: center;
+  background-color: var(--just-white);
+  border: 2px solid var(--green-block-border-decor);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-left: none !important;
   outline: none;
   border-left: none;
   cursor: pointer;
@@ -104,7 +150,7 @@
 .form-button-place {
   width: 220px;
   height: 90px;
-  margin: 0px auto 70px;
+  margin: 0px auto 30px;
 }
 
 .form-button-place:hover .form-btn {
@@ -140,4 +186,17 @@
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+}
+
+.form-error-message {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--error-red);
+}
+
+.form-success-message {
+  font-size: 20px;
+  text-align: center;
+  color: var(--success-green);
 }

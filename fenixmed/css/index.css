@@ -18,4 +18,6 @@
 @import './footer/index.css';
 @import './modal/index.css';
 @import './fixRightSide/index.css';
+@import './datePicker/index.css';
+@import './timePicker/index.css';
 @import './responsive/index.css';

@@ -8,7 +8,7 @@
 
     <title>Register</title>
   </head>
-  <body>
+  <body data-lang="">
 		<!-- start modal place -->
     <!-- start modal place -->
     <section class="modal-place-fix">
@@ -153,7 +153,7 @@
 							<input type="text" name="fullname" id="fullname" class="register-input" placeholder="Ազգանուն *" />
 						</div>
 						<div class="form-input-place">
-							<input type="text" name="phone" id="phone" class="register-input" placeholder="Հեռախոսահամար *" />
+							<input type="text" data-mask="000-00-00-00" name="phone" id="phone" class="register-input" placeholder="Հեռախոսահամար *" />
 						</div>
 						<div class="form-input-place">
 							<input type="text" name="email" id="email" class="register-input" placeholder="Էլ.հասցե *" />
@@ -175,7 +175,7 @@
 								<option value="12">Մասնաճյուղ համար տասներկու</option>
 							</select>
 						</div>
-						<div class="form-analize-place" data-analizeCount="0" data-isopen="false">
+						<div class="form-analize-place" data-isopen="false">
 							<p class="form-analize-text">Անալիզներ *</p>
 							<!--  -->
 							<div class="form-analize-list-abs-place">
@@ -191,7 +191,7 @@
 									</div>
 								</div>
 								<!--  -->
-								<div class="form-analize-list-item" data-analize-id="2" data-check="false">
+								<div class="form-analize-list-item" data-analize-id="2" data-check="true">
 									<p class="form-analize-list-analize-name">Անալիզի Անվանում</p>
 									<div>
 										<p class="form-analize-list-analize-price">37.000դր</p>
@@ -221,7 +221,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="form-analize-list-item" data-analize-id="5" data-check="false">
+								<div class="form-analize-list-item" data-analize-id="5" data-check="true">
 									<p class="form-analize-list-analize-name">Անալիզի Անվանում</p>
 									<div>
 										<p class="form-analize-list-analize-price">42.000դր</p>
@@ -244,25 +244,24 @@
 							</div>
 						</div>
 						<div class="form-input-place">
-							<input type="text" name="month" id="month" class="register-input short-input" disabled="disabled" placeholder="Ամիս ամսաթիվ *" />
-							<button type="button" class="input-btn" id="calendar">
-								<img src="./images/calendar.svg" alt="calendar" />
-							</button>
+							<input type="text" name="day" id="datepicker" class="register-input short-input" disabled="disabled" placeholder="Ամիս ամսաթիվ *" />
 						</div>
 						<div class="form-input-place">
-							<input type="text" name="hour" id="hour" class="register-input short-input" disabled="disabled" placeholder="Ժամ *" />
+							<input type="text" name="time" id="timepicker" class="register-input short-input" disabled="disabled" placeholder="Ժամ *" />
 							<button type="button" class="input-btn" id="clock">
 								<img src="./images/clock.svg" alt="clock" />
 							</button>
 						</div>
 						<!--  -->
-						<textarea name="message" placeholder="Հաղորդագրություն"></textarea>
+						<textarea name="message" id="message" placeholder="Հաղորդագրություն"></textarea>
 						<!--  -->
 						<div class="form-button-place">
 							<button type="button" class="form-btn">
 								Գրանցվել
 							</button>
 						</div>
+						<p class="form-error-message"></p>
+						<p class="form-success-message"></p>
 					</div>
 				</div>
 				<!-- register form place -->
@@ -375,7 +374,11 @@
     <!-- start scripts -->
 		<script src="./js/jQuery.js"></script>
 		<script src="./js/select.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/jQueryUI.js"></script>
+    <script src="./js/timePicker.js"></script>
+    <script src="./js/dateAndTimePicker.js"></script>
+		<script src="./js/mask.js"></script>
+		<script src="./js/main.js"></script>
     <!-- end scripts -->
     <!-- end scripts -->
   </body>
