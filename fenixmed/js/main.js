@@ -22,6 +22,24 @@ $(document).ready(function() {
 
 
 
+  // open close header menu mobile, burger button
+  $('.burger').on('click', function() {
+    $(this).toggleClass('active');
+    $(this).toggleClass('not-active');
+
+    if ($('.header-menu-mobile').height() === 0) {
+      $('.header-menu-mobile').css({
+        'height': '360px'
+      });
+    } else {
+      $('.header-menu-mobile').css({
+        'height': '0px'
+      });
+    }
+  });
+  // open close header menu mobile, burger button
+
+
   // open modal
   $('.get-analize-btn').on('click', function(e) {
     e.preventDefault();
