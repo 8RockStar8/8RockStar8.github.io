@@ -170,6 +170,28 @@
   }
 }
 
+@media(max-width: 1320px) {
+  .footer-center {
+    width: 1100px;
+  }
+
+  .footer-info-blocks {
+    width: 360px;
+  }
+
+  .footer-info-blocks:nth-of-type(2) {
+    margin: 0px 30px;
+  }
+
+  .footer-info-blocks-decor {
+    margin: 60px 0px 10px 0px;
+  }
+
+  .all-right {
+    font-size: 18px;
+  }
+}
+
 @media(max-width: 1300px) {
   .doctors-place-center {
     width: 840px;
@@ -261,6 +283,18 @@
     align-items: center;
   }
 
+  .flags-place {
+    width: 80px;
+  }
+
+  .flag-link {
+    margin-right: 10px;
+  }
+
+  .flag-link:nth-child(3n) {
+    margin-right: 0px;
+  }
+
   .top-services-place {
     width: 540px;
     min-height: 600px;
@@ -282,7 +316,7 @@
   }
 
   .about-place-child:last-child {
-    padding-bottom: 20px;
+    padding: 0px 15px 20px 15px;
   }
 
   .about-title {
@@ -394,22 +428,32 @@
   }
 }
 
-/* @media(max-width: 520px) {
-  .header-menu-mobile-link {
-    font-size: 14px;
+@media(max-width: 420px) {
+  .doctors-place-center {
+    width: 300px;
   }
 
-  .header-mobile-phone-number {
-    font-size: 14px;
+  .doctors-block {
+    width: 100%;
+    height: 400px;
+  }
+
+  .doctors-open-info-place {
+    bottom: -140px;
+    height: 140px;
+  }
+
+  .doctor-info-text {
+    font-size: 16px;
+  }
+
+  .doctor-soc-place {
+    width: 180px;
+    margin: 30px auto 0px;
+  }
+
+  .doctor-soc-icon-place {
+    width: 30px;
+    height: 30px;
   }
 }
-
-@media(max-width: 450px) {
-  .header-menu-mobile-link {
-    font-size: 12px;
-  }
-
-  .header-mobile-phone-number {
-    font-size: 12px;
-  }
-} */
