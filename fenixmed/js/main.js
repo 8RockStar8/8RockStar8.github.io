@@ -1,4 +1,25 @@
 $(document).ready(function() {
+  let debug = $('body').data('debug');
+  let prefix;
+  if (debug) {
+    prefix = '/app_dev.php';
+  }
+  else {
+    prefix = '';
+  }
+
+
+  // detect window width
+  let width = $(window).width();
+  let height = $(window).height();
+  let widthResize = 0;
+  $(window).resize(function () {
+    widthResize = $(window).width();
+  });
+  // detect window width
+
+
+
   // check language
   let lang = $('body').data('lang');
 
@@ -32,9 +53,15 @@ $(document).ready(function() {
     $(this).toggleClass('not-active');
 
     if ($('.header-menu-mobile').height() === 0) {
-      $('.header-menu-mobile').css({
-        'height': '360px'
-      });
+      if (height > 450) {
+        $('.header-menu-mobile').css({
+          'height': '360px'
+        });
+      } else {
+        $('.header-menu-mobile').css({
+          'height': '300px'
+        });
+      }
     } else {
       $('.header-menu-mobile').css({
         'height': '0px'
@@ -132,9 +159,35 @@ $(document).ready(function() {
       });
       $(this).data('open', true);
     } else {
-      $('.selected-analize-place').css({
-        'right': '-500px'
-      });
+      if (widthResize > 0) {
+        if (widthResize > 560) {
+          $('.selected-analize-place').css({
+            'right': '-500px'
+          });
+        } else if (widthResize <= 560 && widthResize > 420) {
+          $('.selected-analize-place').css({
+            'right': '-360px'
+          });
+        } else {
+          $('.selected-analize-place').css({
+            'right': '-270px'
+          });
+        }
+      } else {
+        if (width > 560) {
+          $('.selected-analize-place').css({
+            'right': '-500px'
+          });
+        } else if (width <= 560 && width > 420) {
+          $('.selected-analize-place').css({
+            'right': '-360px'
+          });
+        } else {
+          $('.selected-analize-place').css({
+            'right': '-270px'
+          });
+        }
+      }
       $('.open-analize-img').css({
         'transform': 'rotate(180deg)'
       });
@@ -202,7 +255,20 @@ $(document).ready(function() {
         'display': 'none'
       });
     }
-    // TODO: AJAX request
+    var lang = $('.loc').val();
+    var id = $(this).attr('data-id');
+    // console.log(lang)
+    $.ajax({
+      type: "post",
+      data: {
+        id: id,
+      },
+      url: prefix + '/' + lang + "/api/delete-analiysys",
+      success: function (data) {
+
+        //  $('.product_inner_price').text(data)
+      }
+    });
   });
   // remove exist analize
 

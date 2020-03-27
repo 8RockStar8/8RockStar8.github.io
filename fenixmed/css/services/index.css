@@ -60,7 +60,14 @@
 
 .services-block-img-place {
 	width: 150px;
-	height: 150px;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.services-single-block-img-place {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
 }
 
 .services-name {
