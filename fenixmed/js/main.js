@@ -303,7 +303,9 @@ $(document).ready(function() {
 
 
   // select form analize
-  let selectAnalizeArray = [];
+  if ($('.form-analize-list-item')) {
+    var selectAnalizeArray = [];
+  }
   $('.form-analize-list-item').on('click', function() {
     if ($(this).data('check') === false) {
       $(this).css({
@@ -436,24 +438,43 @@ $(document).ready(function() {
     let timepicker = $('#timepicker').val();
     let message = $('#message').val();
 
-    if (name === '' && fullName === '' && phone === '' && email === '' && branch === '0' && analizes.length <= 0 && datepicker === '' && timepicker === '') {
-      $('.form-error-message').text(allError);
-      $('.register-input').css({
-        'border': '2px solid var(--error-red)'
-      });
-      $('.select-selected').css({
-        'border': '2px solid var(--error-red)'
-      });
-      $('.form-analize-place').css({
-        'border': '2px solid var(--error-red)'
-      });
-      $('.ui-datepicker-trigger').css({
-        'border': '2px solid var(--error-red)'
-      });
-      $('.input-btn').css({
-        'border': '2px solid var(--error-red)'
-      });
-      return;
+    if (analizes === undefined) {
+      if (name === '' && fullName === '' && phone === '' && email === '' && branch === '0' && datepicker === '' && timepicker === '') {
+        $('.form-error-message').text(allError);
+        $('.register-input').css({
+          'border': '2px solid var(--error-red)'
+        });
+        $('.select-selected').css({
+          'border': '2px solid var(--error-red)'
+        });
+        $('.ui-datepicker-trigger').css({
+          'border': '2px solid var(--error-red)'
+        });
+        $('.input-btn').css({
+          'border': '2px solid var(--error-red)'
+        });
+        return;
+      }
+    } else {
+      if (name === '' && fullName === '' && phone === '' && email === '' && branch === '0' && analizes.length <= 0 && datepicker === '' && timepicker === '') {
+        $('.form-error-message').text(allError);
+        $('.register-input').css({
+          'border': '2px solid var(--error-red)'
+        });
+        $('.select-selected').css({
+          'border': '2px solid var(--error-red)'
+        });
+        $('.form-analize-place').css({
+          'border': '2px solid var(--error-red)'
+        });
+        $('.ui-datepicker-trigger').css({
+          'border': '2px solid var(--error-red)'
+        });
+        $('.input-btn').css({
+          'border': '2px solid var(--error-red)'
+        });
+        return;
+      }
     }
 
     if (name === '') {

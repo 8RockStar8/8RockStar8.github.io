@@ -190,10 +190,50 @@ header {
   height: 30px;
   float: left;
   margin-right: 7px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.flag-link:hover {
+  transform: rotate3d(0, 0, -1, -40deg);
+  -webkit-transform: rotate3d(0, 0, -1, -40deg);
+  -moz-transform: rotate3d(0, 0, -1, -40deg);
+  -ms-transform: rotate3d(0, 0, -1, -40deg);
+  -o-transform: rotate3d(0, 0, -1, -40deg);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 
 .flag-link:last-child {
   margin-right: 0px;
+}
+
+.flag-link-active {
+  animation: ease 1s lang infinite alternate-reverse;
+  -webkit-animation: ease 1s lang infinite alternate-reverse;
+}
+
+@keyframes lang {
+  0% {
+    transform: rotate3d(0, 0, -1, -40deg);
+    -webkit-transform: rotate3d(0, 0, -1, -40deg);
+    -moz-transform: rotate3d(0, 0, -1, -40deg);
+    -ms-transform: rotate3d(0, 0, -1, -40deg);
+    -o-transform: rotate3d(0, 0, -1, -40deg);
+}
+  100% {
+    transform: rotate3d(0, 0, -1, 40deg);
+    -webkit-transform: rotate3d(0, 0, -1, 40deg);
+    -moz-transform: rotate3d(0, 0, -1, 40deg);
+    -ms-transform: rotate3d(0, 0, -1, 40deg);
+    -o-transform: rotate3d(0, 0, -1, 40deg);
+}
 }
 
 @keyframes top {

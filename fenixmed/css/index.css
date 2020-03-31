@@ -12,6 +12,7 @@
 @import './registerDoctor/index.css';
 @import './register/index.css';
 @import './actions/index.css';
+@import './actionSingle/index.css';
 @import './branches/index.css';
 @import './analize/index.css';
 @import './price/index.css';

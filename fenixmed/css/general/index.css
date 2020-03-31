@@ -149,6 +149,11 @@ textarea {
   object-position: center;
 }
 
+.myFrame {
+  width: 100%;
+  height: 100%;
+}
+
 ::placeholder {
   font-family: var(--site-font);
   font-size: 30px;
