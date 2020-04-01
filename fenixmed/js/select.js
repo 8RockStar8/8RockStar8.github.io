@@ -15,6 +15,8 @@ for (i = 0; i < x.length; i++) {
     /*for each option in the original select element,
     create a new DIV that will act as an option item:*/
     c = document.createElement("DIV");
+    c.setAttribute("value", selElmnt.options[j].value);
+    c.setAttribute("class", "get-branch");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function(e) {
         /*when an item is clicked, update the original select box,
@@ -30,7 +32,7 @@ for (i = 0; i < x.length; i++) {
             for (k = 0; k < y.length; k++) {
               y[k].removeAttribute("class");
             }
-            this.setAttribute("class", "same-as-selected");
+            this.setAttribute("class", "same-as-selected get-branch");
             break;
           }
         }

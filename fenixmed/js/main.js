@@ -426,6 +426,14 @@ $(document).ready(function() {
 
 
 
+  // get branch id
+  $('.get-branch').on('click', function () {
+    console.log($(this)[0].attributes.value.value);
+  });
+  // get branch id
+
+
+
   // send form data to backend
   $('.form-btn').on('click', function() {
     let name = $('#name').val();
