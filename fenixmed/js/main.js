@@ -43,6 +43,8 @@ $(document).ready(function() {
   let analizeNumberError = lang === 'ru' ? 'Заполнить поле номер анализа' : lang === 'en' ? 'Fill Analysis number field' : 'Լրացրեք Անալիզի համար դաշտեը';
   let userBirthdayError = lang === 'ru' ? 'Заполнить поле день рождения' : lang === 'en' ? 'Fill Birthday field' : 'Լրացրեք Ծննդյան ամիս ամսաթիվ դաշտեը';
   let selectTypeError = lang === 'ru' ? 'Выберите версию получения Анализа' : lang === 'en' ? 'Choose version get Analysis' : 'Ընտրեք պատասխանը ստանալու տարբերակը';
+  
+  let servicePlaceholder = lang === 'ru' ? 'Услуги *' : lang === 'en' ? 'Services *' : 'Ծառայություններ *';
   // check language
 
 
@@ -426,14 +428,6 @@ $(document).ready(function() {
 
 
 
-  // get branch id
-  $('.get-branch').on('click', function () {
-    console.log($(this)[0].attributes.value.value);
-  });
-  // get branch id
-
-
-
   // send form data to backend
   $('.form-btn').on('click', function() {
     let name = $('#name').val();
@@ -712,4 +706,119 @@ $(document).ready(function() {
     $('.error-text').text('');
   });
   // remove error border from modal inputs, radio check
+
+
+
+  // append custom options
+  function appendOptions() {
+    var x, i, j, selElmnt, a, b, c;
+    /*look for any elements with the class "service-select":*/
+    x = document.getElementsByClassName("service-select");
+    for (i = 0; i < x.length; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      /*for each element, create a new DIV that will act as the selected item:*/
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-service-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /*for each element, create a new DIV that will contain the option list:*/
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-service-items select-service-hide");
+      for (j = 1; j < selElmnt.length; j++) {
+        /*for each option in the original select element,
+        create a new DIV that will act as an option item:*/
+        c = document.createElement("DIV");
+        c.setAttribute("value", selElmnt.options[j].value);
+        c.setAttribute("class", "get-service");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function (e) {
+          /*when an item is clicked, update the original select box,
+          and the selected item:*/
+          var y, i, k, s, h;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < s.length; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-service-as-selected");
+              for (k = 0; k < y.length; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-service-as-selected get-service");
+              break;
+            }
+          }
+          h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /*when the select box is clicked, close any other select boxes,
+        and open/close the current select box:*/
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-service-hide");
+        this.classList.toggle("select-service-arrow-active");
+      });
+    }
+    function closeAllSelect(elmnt) {
+      /*a function that will close all select boxes in the document,
+      except the current select box:*/
+      var x, y, i, arrNo = [];
+      x = document.getElementsByClassName("select-service-items");
+      y = document.getElementsByClassName("select-service-selected");
+      for (i = 0; i < y.length; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i)
+        } else {
+          y[i].classList.remove("select-service-arrow-active");
+        }
+      }
+      for (i = 0; i < x.length; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-service-hide");
+        }
+      }
+    }
+    /*if the user clicks anywhere outside the select box,
+    then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+  }
+  appendOptions();
+  // append custom options
+
+  // TODO: remove array
+  let response = ['service 1', 'service 2', 'service 3', 'service 4', 'service 5', 'service 6', 'service 7', 'service 8', 'service 9'];
+
+  // get branch id
+  
+  $('.get-branch').on('click', function () {
+    console.log($(this)[0].attributes.value.value);
+
+
+
+    // inside ajax success
+    $('#service').empty();
+    $("#service").append('<option value=' + 0 + '>' + servicePlaceholder +  '</option>');
+    $.each(response, function (key, value) {
+      $("#service").append('<option value=' + parseInt(key + 1) + '>' + value + '</option>');
+    });
+    $('.select-service-selected').remove();
+    $('.select-service-items').remove();
+    appendOptions();
+
+
+
+    // get service
+      $('.get-service').on('click', function () {
+        console.log($(this)[0].attributes.value.value);
+      });
+    // get service
+
+    // inside ajax success
+  });
+  // get branch id
+  
 });
