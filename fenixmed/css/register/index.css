@@ -296,3 +296,35 @@
 .select-service-items div:hover, .same-service-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+
+.disable-select-service-selected {
+  width: calc(100% - 4px);
+  height: 100px;
+  margin: 0px auto 10px;
+  padding: 28px 5px 0px 40px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.33);
+  cursor: not-allowed;
+  user-select: none;
+  background-color: var(--just-white);
+  border: 2px solid var(--green-block-border-decor);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  box-sizing: border-box;
+}
+
+/*style the arrow inside the select element:*/
+.disable-select-service-selected:after {
+  position: absolute;
+  content: "";
+  top: 46px;
+  right: 24px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-color: var(--green-block-border-decor) transparent transparent transparent;
+}
