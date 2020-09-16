@@ -21,7 +21,7 @@ function init120(font) {
   // create camera
   camera = new THREE.PerspectiveCamera(66,window.innerWidth/window.innerHeight,0.1,1000)
   camera.position.z = 5;
-
+  camera.position.y = -0.35;
   // create camera
   // create camera
 
