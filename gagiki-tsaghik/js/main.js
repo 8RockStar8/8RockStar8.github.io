@@ -11,7 +11,7 @@ setTimeout(function() {
       imageCount++;
     } else if (imageCount === 3) {
       image.setAttribute('src', './images/es-u-du-first.jpg');
-      imageCount = 0;
+      imageCount = 1;
     }
   }, 10000);
 }, 15000);
