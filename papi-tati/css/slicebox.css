@@ -1,0 +1,71 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.sb-slider {
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	list-style-type: none;
+	max-width: 100% !important;
+}
+
+.sb-slider li {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: none;
+}
+
+.sb-slider img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.sb-perspective {
+	position: relative;
+}
+
+.sb-perspective > div {
+	position: absolute;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-backface-visibility : hidden;
+	-moz-backface-visibility : hidden;
+	-o-backface-visibility : hidden;
+	-ms-backface-visibility : hidden;
+	backface-visibility : hidden;
+}
+
+.sb-side {
+	margin: 0;
+	display: block;
+	position: absolute;
+	-moz-backface-visibility : hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
