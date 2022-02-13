@@ -1,7 +1,9 @@
 $(document).ready(function() {
   const elements = document.querySelectorAll('.animation-elem');
   const audio = new Audio('https://8rockstar8.github.io/papi-tati/audio/forever.ogg');
-  audio.play();
+  $(document).click(function() {
+    audio.play();
+  });
   let upDown = true;
   let elemId = 0;
 
