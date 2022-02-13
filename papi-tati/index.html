@@ -9,13 +9,18 @@
 
 	</head>
 	<body>
-		<audio src="https://8rockstar8.github.io/papi-tati/audio/forever.ogg" autoplay="autoplay" loop="loop"></audio>
+		<audio id="myMusic" loop>
+				<source src="https://8rockstar8.github.io/papi-tati/audio/forever.ogg" type="audio/mp3">
+		</audio>
 
 		<div class="start-block">
 			<div class="animate-text">
 				<p>Սեր ու ջերմություն</p>
 				<p>Մի կյանքի պատմություն</p>
 			</div>
+			<button type="button" class="play-btn">
+				<img src="./images/play.png" class="play-image" />
+			</button>
 		</div>
 		<div id="anim_id_1" class="animation-elem">
 			<div class="abs" style="background-image: url('./images/img_1.jpg');"></div>
