@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>PicsArt Color Dropper</title>
+  </head>
+  <body>
+    <section>
+      <h1>PicsArt Color Dropper</h1>
+
+      <div>
+        <h3>Browse new image or use default</h3>
+
+        <div class="create-place">
+          <div class="create-item">
+            <label for="canvas-file">Image: max size 16MB ( jpg, jpeg, png )</label>
+            <input type="file" id="canvas-file" />
+          </div>
+
+          <div class="create-item">
+            <button type="button" id="default">Use default image</button>
+          </div>
+
+          <div id="result"></div>
+
+          <button class="copy-btn">
+            <img src="./images/copy.svg" alt="copy icon" title="Copy to clipboard" />
+          </button>
+        </div>
+
+      </div>
+      
+      <div>
+        <canvas id="canvas"></canvas>
+      </div>
+
+    </section>
+
+    <div id="copy-result">
+      <p>Text copied to clipboard</p>
+    </div>
+    
+    <script src="./js/colorDropper.js"></script>
+  </body>
+</html>
