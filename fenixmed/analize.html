@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Analize</title>
+  </head>
+  <body data-lang="">
+    <!-- start modal place -->
+    <!-- start modal place -->
+    <section class="modal-place-fix">
+      <div class="modal-place-center">
+        <!-- close button -->
+        <button type="button" class="modal-close-btn">
+          <img src="./images/close.svg" class="image-cover" alt="close" />
+        </button>
+        <!-- close button -->
+
+        <!-- -->
+        <h2 class="modal-title">Անալիզի Պատասխան</h2>
+        <p class="modal-text">Լրացնել պարտադիր դաշտերը</p>
+        <!-- -->
+
+        <!--  -->
+        <div class="modal-form-place">
+          <div class="modal-input-place">
+            <div class="modal-input-place-child">
+              <input type="text" name="analiz-number" id="analiz-number" class="modal-input" placeholder="Անալիզի համար *" />
+            </div>
+            <div class="modal-input-place-child">
+              <input type="text" name="birthday" id="birthday" class="modal-input" placeholder="Ծննդյան ամիս ամսաթիվ *" />
+            </div>
+            <div class="modal-input-place-child">
+              <input type="text" name="analiz-fullname" id="analiz-fullname" class="modal-input" placeholder="Ազգանուն *" />
+            </div>
+          </div>
+          <!--  -->
+          <p class="modal-question-text">Ինչ տարբերակով եք ցանկանում ստանալ ձեր անալիզի պատասխանը</p>
+          <!--  -->
+          <div class="modal-radio-place">
+            <label class="label">
+              Ներբեռնել Ֆայլ
+              <input type="radio" name="getAnalize" value="download" />
+              <span class="checkmark"></span>
+            </label>
+            <!--  -->
+            <label class="label">
+              Ուղարկել Էլ.փոստին
+              <input type="radio" name="getAnalize" value="email" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <!--  -->
+          <div class="modal-get-result-place">
+            <button type="button" class="modal-get-result-btn">
+              Ստանալ Պատասխանը
+            </button>
+          </div>
+          <!--  -->
+          <!-- <p class="error-text"></p>
+          <p class="success-text"></p> -->
+        </div>
+        <!--  -->
+      </div>
+    </section>
+    <!-- end modal place -->
+    <!-- end modal place -->
+
+
+
+    <!-- start selected analize place -->
+    <!-- start selected analize place -->
+    <div class="selected-analize-place">
+      <div class="selected-analize-rel-place">
+        <div class="selected-analize-abs-btn-place">
+          <button type="button" class="open-selected-analize-btn" data-open="false">
+            <img src="./images/open-left-side-icon.svg" class="image-cover open-analize-img" alt="open" />
+          </button>
+        </div>
+        <!--  -->
+
+        <div class="selected-analize-scroll-place">
+          <div class="selected-analize-item" data-id="1" data-price="15000">
+            <p class="selected-analize-name">Անալիզի Անվանում</p>
+            <div>
+              <p class="selected-analize-price">15.000դր</p>
+              <button type="button" class="remove-analize-btn">
+                <img src="./images/remove-analize-icon.svg" class="image-cover" alt="remove analize" />
+              </button>
+            </div>
+          </div>
+          <div class="selected-analize-item" data-id="2" data-price="20000">
+            <p class="selected-analize-name">Անալիզի Անվանում</p>
+            <div>
+              <p class="selected-analize-price">20.000դր</p>
+              <button type="button" class="remove-analize-btn">
+                <img src="./images/remove-analize-icon.svg" class="image-cover" alt="remove analize" />
+              </button>
+            </div>
+          </div>
+          <div class="selected-analize-item" data-id="3" data-price="25000">
+            <p class="selected-analize-name">Անալիզի Անվանում</p>
+            <div>
+              <p class="selected-analize-price">25.000դր</p>
+              <button type="button" class="remove-analize-btn">
+                <img src="./images/remove-analize-icon.svg" class="image-cover" alt="remove analize" />
+              </button>
+            </div>
+          </div>
+          <div class="selected-analize-item" data-id="4" data-price="33000">
+            <p class="selected-analize-name">Անալիզի Անվանում</p>
+            <div>
+              <p class="selected-analize-price">33.000դր</p>
+              <button type="button" class="remove-analize-btn">
+                <img src="./images/remove-analize-icon.svg" class="image-cover" alt="remove analize" />
+              </button>
+            </div>
+          </div>
+          <div class="selected-analize-item" data-id="5" data-price="44000">
+            <p class="selected-analize-name">Անալիզի Անվանում</p>
+            <div>
+              <p class="selected-analize-price">44.000դր</p>
+              <button type="button" class="remove-analize-btn">
+                <img src="./images/remove-analize-icon.svg" class="image-cover" alt="remove analize" />
+              </button>
+            </div>
+          </div>
+          <div class="selected-analize-item" data-id="6" data-price="59000">
+            <p class="selected-analize-name">Անալիզի Անվանում</p>
+            <div>
+              <p class="selected-analize-price">59.000դր</p>
+              <button type="button" class="remove-analize-btn">
+                <img src="./images/remove-analize-icon.svg" class="image-cover" alt="remove analize" />
+              </button>
+            </div>
+          </div>
+
+          <!--  -->
+
+          <div class="selected-analize-info-place">
+            <p class="selected-analize-all-price"></p>
+          </div>
+
+          <a href="register.html" class="link-from-selected-analize-list">
+            Գրանցվել
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end selected analize place -->
+    <!-- end selected analize place -->
+
+
+
+    <!-- start header -->
+    <!-- start header -->
+    <header>
+      <div class="header-center">
+        <!-- logo place -->
+        <div class="logo-place">
+          <a href="index.html" class="link-block">
+            <img src="./images/logo.png" class="image-contain" alt="logo" />
+          </a>
+        </div>
+        <!-- logo place -->
+
+        <!-- header menu -->
+        <ul class="header-menu">
+          <li class="header-menu-item">
+            <a href="analize.html" class="header-menu-link header-menu-link-active">Անալիզներ</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="actions.html" class="header-menu-link">Ակցիաներ</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="doctors.html" class="header-menu-link">Բժիշկներ</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="services.html" class="header-menu-link">Ծառայություններ</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="price.html" class="header-menu-link">Գնացուցակ</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="branches.html" class="header-menu-link">Մասնաճյուղեր</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="blog.html" class="header-menu-link">Բլոգ</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="" class="header-menu-link get-analize-btn">Ստանալ Անալիզի Պատասխան</a>
+          </li>
+        </ul>
+        <!-- header menu -->
+
+        <!-- phone place -->
+        <p class="header-phone-number">
+          Հեռ. +374 77 55 55 55
+        </p>
+        <!-- phone place -->
+
+        <div class="flex-for-mobile">
+          <!-- burger button -->
+          <div class="burger-place">
+            <button type="button" class="burger not-active">
+                <span class="burger-item"></span>
+                <span class="burger-item"></span>
+                <span class="burger-item"></span>
+            </button>
+          </div>
+          <!-- burger button -->
+
+          <!-- header mobile menu -->
+          <ul class="header-menu-mobile">
+            <li class="header-menu-mobile-item">
+              <a href="analize.html" class="header-menu-mobile-link footer-menu-link-active">Անալիզներ</a>
+            </li>
+            <li class="header-menu-mobile-item">
+              <a href="actions.html" class="header-menu-mobile-link">Ակցիաներ</a>
+            </li>
+            <li class="header-menu-mobile-item">
+              <a href="doctors.html" class="header-menu-mobile-link">Բժիշկներ</a>
+            </li>
+            <li class="header-menu-mobile-item">
+              <a href="services.html" class="header-menu-mobile-link">Ծառայություններ</a>
+            </li>
+            <li class="header-menu-mobile-item">
+              <a href="price.html" class="header-menu-mobile-link">Գնացուցակ</a>
+            </li>
+            <li class="header-menu-mobile-item">
+              <a href="branches.html" class="header-menu-mobile-link">Մասնաճյուղեր</a>
+            </li>
+            <li class="header-menu-mobile-item">
+              <a href="blog.html" class="header-menu-mobile-link">Բլոգ</a>
+            </li>
+            <li class="header-menu-mobile-item">
+              <a href="" class="header-menu-mobile-link get-analize-btn">Ստանալ Անալիզի Պատասխան</a>
+            </li>
+            <li class="header-menu-mobile-item">
+              <p class="header-mobile-phone-number">Հեռ. +374 77 55 55 55</p>
+            </li>
+          </ul>
+          <!-- header mobile menu -->
+
+          <!-- flags place -->
+          <div class="flags-place">
+            <a href="#ru" class="flag-link">
+              <img src="./images/flag-ru.svg" class="image-cover" alt="flag_ru" />
+            </a>
+            <a href="#en" class="flag-link">
+              <img src="./images/flag-en.svg" class="image-cover" alt="flag_en" />
+            </a>
+            <a href="#am" class="flag-link flag-link-active">
+              <img src="./images/flag-am.svg" class="image-cover" alt="flag_am" />
+            </a>
+          </div>
+          <!-- flags place -->
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- end header -->
+
+
+
+    <!-- start content -->
+    <!-- start content -->
+    <section class="content">
+      <!-- slider -->
+      <div class="slider-place">
+        <div class="owl-carousel owl-theme slider">
+          <div class="item">
+            <img src="./images/slider-img.png" class="image-cover" alt="slider" />
+            <div class="slider-btn-place-abs">
+              <div class="register-center-btn-place">
+                <a href="register.html" class="link-block register-link">Գրանցվել</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./images/slider-img.png" class="image-cover" alt="slider" />
+            <div class="slider-btn-place-abs">
+              <div class="register-center-btn-place">
+                <a href="register.html" class="link-block register-link">Գրանցվել</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./images/slider-img.png" class="image-cover" alt="slider" />
+            <div class="slider-btn-place-abs">
+              <div class="register-center-btn-place">
+                <a href="register.html" class="link-block register-link">Գրանցվել</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slider -->
+
+
+      <!-- top services place -->
+      <div class="top-services-place">
+        <div class="top-services-place-abs">
+          <div class="top-services-place-abs-child">
+            <div class="top-services-block">
+              <div class="top-services-block-child">
+                <a href="services_single.html">
+                  <div class="top-services-block-img-place">
+                    <img src="./images/heart.svg" class="image-cover" alt="service icon" />
+                  </div>
+                  <p class="top-services-name">Ծառայության անուն</p>
+                </a>
+              </div>
+            </div>
+            <div class="top-services-block">
+              <div class="top-services-block-child">
+                <a href="services_single.html">
+                  <div class="top-services-block-img-place">
+                    <img src="./images/hospital.svg" class="image-cover" alt="service icon" />
+                  </div>
+                  <p class="top-services-name">Ծառայության անուն</p>
+                </a>
+              </div>
+            </div>
+            <div class="top-services-block">
+              <div class="top-services-block-child">
+                <a href="services_single.html">
+                  <div class="top-services-block-img-place">
+                    <img src="./images/medical.svg" class="image-cover" alt="service icon" />
+                  </div>
+                  <p class="top-services-name">Ծառայության անուն</p>
+                </a>
+              </div>
+            </div>
+            <div class="top-services-block">
+              <div class="top-services-block-child">
+                <a href="services_single.html">
+                  <div class="top-services-block-img-place">
+                    <img src="./images/nurse.svg" class="image-cover" alt="service icon" />
+                  </div>
+                  <p class="top-services-name">Ծառայության անուն</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="see-all-services-btn-place">
+            <a href="services.html" class="link-block see-all-link">Ավելին</a>
+          </div>
+        </div>
+      </div>
+      <!-- top services place -->
+
+
+      <!-- analize place -->
+      <div class="analize-place">
+        <h1 class="analize-place-title">Անալիզներ</h1>
+        <!--  -->
+        <div class="analize-blocks-place">
+          <!--  -->
+          <div class="analize-block">
+            <a href="price.html" class="link-block">
+              <div class="analize-block-under-abs">
+                <p class="analize-block-under-abs-text">Անալիզի Անվանում</p>
+              </div>
+              <div class="analize-block-over-rel">
+                <div class="analize-block-over-bg-abs">
+                  <img src="./images/analize-one.png" class="image-cover" alt="analize" />
+                </div>
+                <div class="analize-block-over-text-abs">
+                  <div class="analize-block-over-text-rel">
+                    <div class="analize-block-over-text-up-abs">
+                      <p class="analize-block-over-text">Անալիզի Անվանում</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--  -->
+          <div class="analize-block">
+            <a href="price.html" class="link-block">
+              <div class="analize-block-under-abs">
+                <p class="analize-block-under-abs-text">Անալիզի Անվանում</p>
+              </div>
+              <div class="analize-block-over-rel">
+                <div class="analize-block-over-bg-abs">
+                  <img src="./images/analize-two.png" class="image-cover" alt="analize" />
+                </div>
+                <div class="analize-block-over-text-abs">
+                  <div class="analize-block-over-text-rel">
+                    <div class="analize-block-over-text-up-abs">
+                      <p class="analize-block-over-text">Անալիզի Անվանում</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="analize-block">
+            <a href="price.html" class="link-block">
+              <div class="analize-block-under-abs">
+                <p class="analize-block-under-abs-text">Անալիզի Անվանում</p>
+              </div>
+              <div class="analize-block-over-rel">
+                <div class="analize-block-over-bg-abs">
+                  <img src="./images/analize-three.png" class="image-cover" alt="analize" />
+                </div>
+                <div class="analize-block-over-text-abs">
+                  <div class="analize-block-over-text-rel">
+                    <div class="analize-block-over-text-up-abs">
+                      <p class="analize-block-over-text">Անալիզի Անվանում</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="analize-block">
+            <a href="price.html" class="link-block">
+              <div class="analize-block-under-abs">
+                <p class="analize-block-under-abs-text">Անալիզի Անվանում</p>
+              </div>
+              <div class="analize-block-over-rel">
+                <div class="analize-block-over-bg-abs">
+                  <img src="./images/analize-four.png" class="image-cover" alt="analize" />
+                </div>
+                <div class="analize-block-over-text-abs">
+                  <div class="analize-block-over-text-rel">
+                    <div class="analize-block-over-text-up-abs">
+                      <p class="analize-block-over-text">Անալիզի Անվանում</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="analize-block">
+            <a href="price.html" class="link-block">
+              <div class="analize-block-under-abs">
+                <p class="analize-block-under-abs-text">Անալիզի Անվանում</p>
+              </div>
+              <div class="analize-block-over-rel">
+                <div class="analize-block-over-bg-abs">
+                  <img src="./images/analize-one.png" class="image-cover" alt="analize" />
+                </div>
+                <div class="analize-block-over-text-abs">
+                  <div class="analize-block-over-text-rel">
+                    <div class="analize-block-over-text-up-abs">
+                      <p class="analize-block-over-text">Անալիզի Անվանում</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="analize-block">
+            <a href="price.html" class="link-block">
+              <div class="analize-block-under-abs">
+                <p class="analize-block-under-abs-text">Անալիզի Անվանում</p>
+              </div>
+              <div class="analize-block-over-rel">
+                <div class="analize-block-over-bg-abs">
+                  <img src="./images/analize-five.png" class="image-cover" alt="analize" />
+                </div>
+                <div class="analize-block-over-text-abs">
+                  <div class="analize-block-over-text-rel">
+                    <div class="analize-block-over-text-up-abs">
+                      <p class="analize-block-over-text">Անալիզի Անվանում</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--  -->
+        <div class="register-center-btn-place">
+					<a href="register.html" class="link-block register-link">Գրանցվել</a>
+				</div>
+      </div>
+      <!-- analize place -->
+    </section>
+    <!-- end content -->
+    <!-- end content -->
+
+
+
+    <!-- start footer -->
+		<!-- start footer -->
+		<footer>
+			<div class="footer-top">
+				<div class="footer-center">
+					<!--  -->
+					<div class="footer-info-blocks">
+						<div class="footer-info-blocks-decor">
+							<ul class="footer-menu">
+								<li class="footer-menu-item">
+									<a href="analize.html" class="footer-menu-link footer-menu-link-active">Անալիզներ</a>
+								</li>
+								<li class="footer-menu-item">
+									<a href="actions.html" class="footer-menu-link">Ակցիաներ</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="blog.html" class="footer-menu-link">Բլոգ</a>
+                </li>
+								<li class="footer-menu-item">
+									<a href="register.html" class="footer-menu-link">Օնլայն գրանցում</a>
+								</li>
+								<li class="footer-menu-item">
+									<a href="doctors.html" class="footer-menu-link">Բժիշկներ</a>
+								</li>
+								<li class="footer-menu-item">
+									<a href="services.html" class="footer-menu-link">Ծառայություններ</a>
+								</li>
+								<li class="footer-menu-item">
+									<a href="price.html" class="footer-menu-link">Գնացուցակ</a>
+								</li>
+								<li class="footer-menu-item">
+									<a href="branches.html" class="footer-menu-link">Մասնաճյուղեր</a>
+								</li>
+								<li class="footer-menu-item">
+									<a href="" class="footer-menu-link get-analize-btn">Ստանալ Անալիզի Պատասխան</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--  -->
+					<div class="footer-info-blocks">
+						<div class="footer-logo-place">
+							<a href="index.html" class="link-block">
+								<img src="./images/footer-logo.png" alt="footer logo" />
+							</a>
+						</div>
+						<!--  -->
+						<div class="subscribe-soc-place">
+							<div class="subscribe-soc-icon-place">
+								<a href="" target="_blank" class="link-block">
+									<img src="./images/facebook.svg" class="image-cover" alt="social icons" />
+								</a>
+							</div>
+							<div class="subscribe-soc-icon-place">
+								<a href="" target="_blank" class="link-block">
+									<img src="./images/instagram.svg" class="image-cover" alt="social icons" />
+								</a>
+							</div>
+							<div class="subscribe-soc-icon-place">
+								<a href="" target="_blank" class="link-block">
+									<img src="./images/linkedin.svg" class="image-cover" alt="social icons" />
+								</a>
+							</div>
+						</div>
+						<!--  -->
+						<div class="footer-soc-decor"></div>
+						<!--  -->
+						<p class="follow-text">Հետևեք մեզ սոց ցանցերում</p>
+					</div>
+					<!--  -->
+					<div class="footer-info-blocks">
+						<div class="footer-info-blocks-decor">
+							<p class="feedback-text">Հետադարձ կապ +374 77 55 55 55</p>
+							<div class="feedback-soc-place">
+								<div class="feedback-soc-icon-place">
+									<img src="./images/viber.svg" class="image-cover" alt="social icons" />
+								</div>
+								<div class="feedback-soc-icon-place">
+									<img src="./images/whatsapp.svg" class="image-cover" alt="social icons" />
+								</div>
+								<div class="feedback-soc-icon-place">
+									<img src="./images/telegram.svg" class="image-cover" alt="social icons" />
+								</div>
+							</div>
+							<p class="feedback-text">Doctors.@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div class="footer-bottom">
+				<div class="footer-center">
+					<p class="all-right">ALL RIGHT RECEVED 2020</p>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+    <!-- end footer -->
+    
+
+
+    <!-- start scripts -->
+    <!-- start scripts -->
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- end scripts -->
+    <!-- end scripts -->
+  </body>
+</html>

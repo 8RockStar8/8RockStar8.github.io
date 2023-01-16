@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+#firstScene120 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+#firstScene81 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}

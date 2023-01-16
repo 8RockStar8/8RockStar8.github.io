@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Artiv05-Regular';
+    src: url('./../fonts/Artiv05-Regular.eot?#iefix') format('embedded-opentype'),  url('./../fonts/Artiv05-Regular.otf')  format('opentype'),
+           url('./../fonts/Artiv05-Regular.woff') format('woff'), url('./../fonts/Artiv05-Regular.ttf')  format('truetype'), url('./../fonts/Artiv05-Regular.svg#Artiv05-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

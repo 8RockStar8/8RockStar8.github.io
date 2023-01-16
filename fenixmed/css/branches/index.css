@@ -1,0 +1,97 @@
+.branches-place {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 40px 0px;
+}
+
+.branches-title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--just-black);
+}
+
+.branches-slide-place {
+  width: 1500px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.branches-accordion-item {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  line-height: 100%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.branches-accordion-bg-place {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+
+.branches-accordion-first-decor-layer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-doctors-hover-decor);
+  z-index: -4;
+}
+
+.branches-accordion-info-place {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+.branche-title {
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: var(--just-white);
+}
+
+.branches-accordion-info-text-place {
+  margin-top: 40px;
+}
+
+.branches-accordion-info-text {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: var(--just-white);
+}
+
+.branch-address-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.branch-soc-place {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.branch-soc-link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px 10px 0px;
+}

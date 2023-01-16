@@ -1,0 +1,189 @@
+.doctors-background-place {
+  position: relative;
+  width: 100%;
+  height: 445px;
+}
+
+.doctors-background-abs {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.doctors-background-text-place {
+  width: 100%;
+  height: 150px;
+  margin-top: 200px;
+  background-color: var(--background-color-doctors-hover-decor);
+}
+
+.doctors-background-text {
+  line-height: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  letter-spacing: 0.5em;
+  color: var(--just-white);
+}
+
+.all-doctors-place {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 40px 0px;
+}
+
+.all-doctors-title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.all-doctors-center {
+  width: 1720px;
+  height: auto;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.all-doctors-block {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin: 0px 40px 40px 0px;
+  overflow: hidden;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.all-doctors-block:nth-child(4n) {
+  margin: 0px 0px 40px 0px;
+}
+
+.all-doctors-block:hover {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.all-doctors-block:hover::after {
+  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.all-doctors-block:hover::before {
+  transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.all-doctors-block:hover .all-doctors-info-place {
+  top: 0%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.all-doctors-block::after {
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  left: 0px;
+  width: 570px;
+  height: 290px;
+  background-color: var(--background-color-doctors-hover-decor);
+  transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
+  -moz-transform: rotateZ(-90deg);
+  -ms-transform: rotateZ(-90deg);
+  -o-transform: rotateZ(-90deg);
+  transform-origin: bottom left;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.all-doctors-block::before {
+  position: absolute;
+  content: '';
+  top: 0px;
+  right: 0px;
+  width: 570px;
+  height: 290px;
+  background-color: var(--background-color-doctors-hover-decor);
+  transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
+  -moz-transform: rotateZ(-90deg);
+  -ms-transform: rotateZ(-90deg);
+  -o-transform: rotateZ(-90deg);
+  transform-origin: top right;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.all-doctors-info-place {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding-top: 35%;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.all-doctors-register-btn {
+  width: 200px;
+  height: 80px;
+  margin: 0px auto 40px;
+  clear: both;
+}

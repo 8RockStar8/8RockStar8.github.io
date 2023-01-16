@@ -1,0 +1,129 @@
+.services-place {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 40px 0px;
+}
+
+.services-title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--just-black);
+}
+
+.services-center {
+  width: 1660px;
+  height: auto;
+  margin: 40px auto 0px;
+}
+
+.services-block {
+	perspective: 500px;
+	width: 415px;
+	height: 300px;
+  float: left;
+  margin-bottom: 22px;
+}
+
+.services-block-child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.services-block .services-block-child {
+	width: 102%;
+	height: 100%;
+	margin: 0px 0px 0px 15px;
+	background-color: var(--header-footer-bg-color);
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+	transform: rotateY(9deg);
+	-webkit-transform: rotateY(9deg);
+	-moz-transform: rotateY(9deg);
+	-ms-transform: rotateY(9deg);
+	-o-transform: rotateY(9deg);
+}
+
+.services-block:nth-child(2n) .services-block-child {
+	width: 102%;
+	height: 100%;
+	margin: 0px 0px 0px -15px;
+	background-color: var(--green-block-border-decor);
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+	transform: rotateY(-9deg);
+	-webkit-transform: rotateY(-9deg);
+	-moz-transform: rotateY(-9deg);
+	-ms-transform: rotateY(-9deg);
+	-o-transform: rotateY(-9deg);
+}
+
+.services-block-img-place {
+	width: 150px;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.services-single-block-img-place {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
+}
+
+.services-name {
+	max-width: 300px;
+	margin-top: 5px;
+	text-align: center;
+	font-size: 18px;
+	color: var(--just-black);
+	word-wrap: break-word;
+}
+/*  */
+.register-now-place {
+  width: 100%;
+  min-height: 690px;
+  height: auto;
+  float: left;
+  margin-bottom: 60px;
+  background-color: var(--just-white);
+  box-shadow: 0px 4px 30px rgba(72, 136, 123, 0.5);
+}
+
+.register-now-center {
+  width: 1660px;
+  height: auto;
+  margin: 0px auto;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+.register-now-img-place {
+  width: 674px;
+  height: 583px;
+  float: left;
+}
+
+.register-now-text-place {
+  width: 535px;
+  float: right;
+}
+
+.register-now-title {
+  margin-top: 40px;
+  font-size: 50px;
+  color: var(--just-black);
+  text-align: center;
+}
+
+.register-now-text {
+  margin: 70px 0px 40px 0px;
+  font-size: 30px;
+  color: var(--just-black);
+  text-align: center;
+}
+
+.register-now-btn-place {
+  width: 200px;
+  height: 80px;
+  margin: 70px auto 0px;
+}
