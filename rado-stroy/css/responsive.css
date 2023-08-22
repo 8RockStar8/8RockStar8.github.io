@@ -1,0 +1,6 @@
+@media(max-width: 1925px) {
+  .banner-place {
+    width: fit-content;
+    height: fit-content;
+  }
+}
