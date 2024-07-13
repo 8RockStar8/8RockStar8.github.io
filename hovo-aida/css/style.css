@@ -1,0 +1,249 @@
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('./../fonts/PlayfairDisplay-Regular.eot');
+	src: url('./../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		url('./../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+		url('./../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+		url('./../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+		url('./../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Playfair Display';
+}
+
+.rings-block {
+	width: 150px;
+	height: 150px;
+	margin: 0px auto;
+}
+
+.rings {
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	color: #2B4865;
+}
+
+.title {
+	font-size: 46px;
+	text-align: center;
+}
+
+.countdown {
+	display: flex;
+	width: 600px;
+	margin: 0px auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.countdown-block {
+	font-size: 42px;
+	color: #2B4865;
+	margin: 0px 20px;
+	text-align: center;
+}
+
+.countdown-text {
+	color: #C78665;
+}
+
+.wedding-block {
+	width: 100%;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+.wedding-block:first-child {
+	padding: 0px;
+	margin: 0px;
+}
+
+.intro-block {
+	display: flex;
+	width: 1100px;
+	margin: 0px auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.intro-image-block {
+	position: relative;
+	display: flex;
+	width: 424px;
+	height: 624px;
+	align-items: center;
+	justify-content: center;
+	background-color: #EFF4FE;
+	border: 2px solid #C78665;
+	border-radius: 220px;
+	-webkit-border-radius: 220px;
+	-moz-border-radius: 220px;
+	-ms-border-radius: 220px;
+	-o-border-radius: 220px;
+}
+
+.intro-img {
+	width: 410px;
+	height: 610px;
+	border-radius: 220px;
+	-webkit-border-radius: 220px;
+	-moz-border-radius: 220px;
+	-ms-border-radius: 220px;
+	-o-border-radius: 220px;
+}
+
+.intro-image-block::before {
+	content: '';
+	position: absolute;
+	top: -40px;
+	left: -90px;
+	width: 274px;
+	height: 375px;
+	z-index: -1;
+	background-image: url('./../images/decor-flower.svg');
+}
+
+.intro-image-block::after {
+	content: '';
+	position: absolute;
+	bottom: -40px;
+	right: -90px;
+	width: 274px;
+	height: 375px;
+	z-index: -1;
+	background-image: url('./../images/decor-flower.svg');
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+}
+
+.info-block {
+	display: flex;
+	width: 1100px;
+	margin: 0px auto 20px;
+}
+
+.info-block div {
+	width: 50%;
+	flex-shrink: 0;
+}
+
+.info-desc-block:first-child {
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+.info-img-block {
+	display: flex;
+	align-items: center;
+	border: 2px solid #C78665;
+	padding: 2px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.info-desc {
+	font-size: 19px;
+}
+
+.info-img {
+	width: 100%;
+}
+
+.cards-block {
+	display: flex;
+	width: 1100px;
+	margin: 120px auto 0px;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	width: 325px;
+	height: 325px;
+	margin: 0px 20px;
+	align-items: center;
+	justify-content: center;
+	background-color: #EFF4FE;
+}
+
+.card-circle {
+	position: absolute;
+	display: flex;
+	top: -120px;
+	left: 42.5px;
+	width: 220px;
+	height: 220px;
+	align-items: center;
+	justify-content: center;
+	background-color: #2B4865;
+	border: 10px solid white;
+	border-radius: 120px;
+	-webkit-border-radius: 120px;
+	-moz-border-radius: 120px;
+	-ms-border-radius: 120px;
+	-o-border-radius: 120px;
+}
+
+.card-circle-border {
+	display: flex;
+	width: 92%;
+	height: 92%;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	border: 3px dashed #C78665;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.card-circle-text {
+	font-size: 22px;
+	color: #777777;
+	text-align: center;
+}
+
+iframe {
+	border: none;
+	width: 100%;
+	height: 450px;
+	flex-shrink: 0;
+}
+
+@media(max-width: 1150px) {
+	.intro-block {
+		width: 95%;
+	}
+
+	.info-block {
+		width: 95%;
+	}
+
+	.cards-block {
+		width: 95%;
+	}
+
+	/* iframe {
+		width: 95% !important;
+	} */
+}
